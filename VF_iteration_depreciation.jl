@@ -86,7 +86,7 @@ c_steady = Kgrid.^(α).-δ.*Kgrid
 
 plt4 = plot(Kgrid,c_steady)
 plot!([Kstar_an], seriestype="vline", label="", legend = false, ylabel = "Potato Consumption", xlabel = "Raw Potato Grid", dpi = 300, title = "Mark's Optimal Consumption Policy", grid =true, gridlinewidth=1, tick_direction =:out, foreground_color_legend = nothing)
-annotate!(Kstar_an-0.02, 0.17, text("\$ K^\\ast \$", :bottom));
+annotate!(Kstar_an, 0, text("\$ K^\\ast \$", :bottom));
 display(plt4)
 
 savepath = wdir*"/plots/optimal_consumption_"*string(N)*".png"
