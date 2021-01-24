@@ -1,6 +1,6 @@
 using LinearAlgebra, Plots
 
-cd("/Users/jensherold/Library/Mobile Documents/com~apple~CloudDocs/Software_Programming/Julia/VF_Iteration/Simple_Model")
+cd("My PATH")
 wdir = pwd();
 
 # Import function that does the iteration/interpolation steps for us
